@@ -28,11 +28,11 @@
                                     <outletCollection property="gestureRecognizers" destination="g4L-HU-ENZ" appends="YES" id="waU-G1-7Aw"/>
                                 </connections>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="LnK-Mg-aYo">
-                                <rect key="frame" x="100" y="409" width="193" height="34.333333333333314"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LnK-Mg-aYo">
+                                <rect key="frame" x="110.66666666666669" y="409" width="172" height="34.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTT-3h-I4D">
-                                        <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="進む"/>
                                         <connections>
@@ -40,7 +40,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvI-nW-c8Y">
-                                        <rect key="frame" x="67.333333333333343" y="0.0" width="58.333333333333343" height="34.333333333333336"/>
+                                        <rect key="frame" x="57.999999999999986" y="0.0" width="56" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                         <connections>
@@ -48,7 +48,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjE-kp-8X6">
-                                        <rect key="frame" x="134.66666666666666" y="0.0" width="58.333333333333343" height="34.333333333333336"/>
+                                        <rect key="frame" x="116" y="0.0" width="56" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="再生"/>
                                         <connections>
@@ -65,8 +65,6 @@
                             <constraint firstItem="rNe-jv-2Ab" firstAttribute="centerX" secondItem="LnK-Mg-aYo" secondAttribute="centerX" id="PCx-vL-4jH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rNe-jv-2Ab" secondAttribute="trailing" constant="130" id="djK-lt-H6d"/>
                             <constraint firstItem="LnK-Mg-aYo" firstAttribute="top" secondItem="rNe-jv-2Ab" secondAttribute="bottom" constant="40" id="jg1-Wd-jMr"/>
-                            <constraint firstItem="LnK-Mg-aYo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="kc9-kX-4Jd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LnK-Mg-aYo" secondAttribute="trailing" constant="100" id="p1Q-6u-4kq"/>
                             <constraint firstItem="rNe-jv-2Ab" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="pdo-CB-1GG"/>
                             <constraint firstItem="rNe-jv-2Ab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="yza-9s-HnD"/>
                         </constraints>
@@ -90,9 +88,9 @@
         <!--Detail View Controller-->
         <scene sceneID="HPf-E9-vGb">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="hdo-Lc-xWo" customClass="DetailViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" modalPresentationStyle="fullScreen" id="hdo-Lc-xWo" customClass="DetailViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hRx-VR-GYO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taE-qy-NUI">
@@ -100,7 +98,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                 <connections>
-                                    <segue destination="Vdb-9p-Omd" kind="unwind" unwindAction="unwind:" id="TX0-Jr-chN"/>
+                                    <action selector="goBack:" destination="hdo-Lc-xWo" eventType="touchUpInside" id="XMT-xr-nil"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VZj-OB-wOx">
@@ -126,7 +124,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksB-c1-Rw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Vdb-9p-Omd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1064.885496183206" y="2.8169014084507045"/>
         </scene>
