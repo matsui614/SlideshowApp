@@ -48,16 +48,6 @@
 			path = SlideshowApp;
 			sourceTree = "<group>";
 		};
-		E11130D02D70452D00CE3E95 /* SlideshowAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SlideshowAppTests;
-			sourceTree = "<group>";
-		};
-		E11130DA2D70452D00CE3E95 /* SlideshowAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SlideshowAppUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				E11130B92D70452B00CE3E95 /* SlideshowApp */,
-				E11130D02D70452D00CE3E95 /* SlideshowAppTests */,
-				E11130DA2D70452D00CE3E95 /* SlideshowAppUITests */,
 				E11130B82D70452B00CE3E95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +131,6 @@
 			dependencies = (
 				E11130CF2D70452D00CE3E95 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				E11130D02D70452D00CE3E95 /* SlideshowAppTests */,
-			);
 			name = SlideshowAppTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +150,6 @@
 			);
 			dependencies = (
 				E11130D92D70452D00CE3E95 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E11130DA2D70452D00CE3E95 /* SlideshowAppUITests */,
 			);
 			name = SlideshowAppUITests;
 			packageProductDependencies = (
