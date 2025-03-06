@@ -24,28 +24,28 @@ class ViewController: UIViewController {
            
            // 画像をセット
            images = [
-               UIImage(named: "image1") ?? UIImage(),
-               UIImage(named: "image2") ?? UIImage(),
-               UIImage(named: "image3") ?? UIImage()
+               UIImage(named: "image1.jpg") ?? UIImage(),
+               UIImage(named: "image2.jpg") ?? UIImage(),
+               UIImage(named: "image3.jpg") ?? UIImage()
            ]
            
            print("📷 images 配列の中身: \(images)")
            print("📷 currentIndex: \(currentIndex)")
 
            
-           if let image1 = UIImage(named: "image1") {
+           if UIImage(named: "image1.jpg") != nil {
                print("✅ image1 読み込み成功")
            } else {
                print("❌ image1 が見つかりません")
            }
 
-           if let image2 = UIImage(named: "image2") {
+           if UIImage(named: "image2.jpg") != nil {
                print("✅ image2 読み込み成功")
            } else {
                print("❌ image2 が見つかりません")
            }
 
-           if let image3 = UIImage(named: "image3") {
+           if UIImage(named: "image3.jpg") != nil {
                print("✅ image3 読み込み成功")
            } else {
                print("❌ image3 が見つかりません")
